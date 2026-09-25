@@ -1,9 +1,9 @@
 init -990 python in mas_submod_utils:
     Submod(
         author="NickWildish",
-        name="NSFW Submod",
-        version="1.3.5",
-        description="A collection of NSFW topics and features for MAS.",
+        name="NSFW Submod Optimized",
+        version="2.0.0",
+        description="A collection of NSFW topics and features for MAS, optimized.",
         settings_pane="nsfw_submod_screen",
         version_updates= {
             "nickwildish_nsfw_submod_v1_0_3": "nickwildish_nsfw_submod_v1_1_0",
@@ -12,19 +12,8 @@ init -990 python in mas_submod_utils:
             "nickwildish_nsfw_submod_v1_3_0": "nickwildish_nsfw_submod_v1_3_2",
             "nickwildish_nsfw_submod_v1_3_2": "nickwildish_nsfw_submod_v1_3_4"
         },
-        coauthors=["mizuotana-nirera", "TreeWizard96"]
+        coauthors=["mizuotana-nirera", "TreeWizard96", "ifitmakesyoushush"]
     ) # https://github.com/NickWildish/Mas-NSFW-Submod
-
-# Register the updater
-init -989 python:
-    if store.mas_submod_utils.isSubmodInstalled("Submod Updater Plugin"):
-        store.sup_utils.SubmodUpdater(
-            submod="NSFW Submod",
-            user_name="NickWildish",
-            repository_name="Mas-NSFW-Submod",
-            update_dir="",
-            attachment_id=None
-        )
 
 default persistent._nsfw_player_endurance = 1
 default persistent._nsfw_monika_sexting_frequency = 1
