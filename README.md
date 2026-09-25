@@ -2,4 +2,4 @@
 
 This is an OPTIMIZED version of the NSFW submod, with proper derandoming and QOL features.
 
-Please support [[the original version](https://github.com/NickWildish/Mas-NSFW-Submod/)] as well.
+Please support [the original version(https://github.com/NickWildish/Mas-NSFW-Submod/)] as well.
