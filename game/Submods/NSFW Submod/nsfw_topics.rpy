@@ -24,7 +24,7 @@ label nsfw_player_monika_initiate_sext:
     m 2ekc "But do you really want me to?"
     m 3rkc "You turned me down that many times that I started to doubt you wanted it."
     m 1dkblc "I don't like to be rejected so much, [player]."
-    m 1ekbla "Do you really want me to initiate sexting sessions again?"
+    m 1ekbla "Do you really want me to initiate sexting sessions again?{nw}"
 
     $ _history_list.pop()
     menu:
@@ -280,7 +280,7 @@ label nsfw_monika_dick_size:
     if persistent._mas_first_kiss:
         call monika_kissing_motion_short
 
-    return "love"
+    return "derandom|love"
 
 # Thank you for writing this topic, KittyTheCocksucker
 init 5 python:
@@ -345,7 +345,7 @@ label nsfw_monika_favorite_position:
             m 5tubfb "I'd be happy to saddle up and ride it real good! Ahaha~"
             $ persistent._nsfw_player_favourite_position = "Cowgirl"
 
-    return
+    return "derandom"
 
 init 5 python:
     addEvent(
@@ -403,7 +403,7 @@ label nsfw_monika_fetish:
         m 3ekbsa "So, if you have a fantasy that isn't {i}too{/i} dangerous..."
         m 5eubsa "I wouldn't mind being there to help you...{w=0.2}fulfill it."
         m 5hubsa "Ehehe~"
-    return
+    return "derandom"
 
 default persistent._nsfw_genitalia = None # P: Penis, V: Vagina, U: Unknown ; Default: None
 
@@ -450,7 +450,7 @@ label nsfw_monika_genitalia:
     m 2tsbsa "Now when we flirt, I know what is going on down there~"
     m 2gsbfa "..."
     m 1hubfb "Ahaha! Sorry. I just wanted to tease you a little."
-    return
+    return "derandom"
 
 init 5 python:
     addEvent(
@@ -502,7 +502,7 @@ label nsfw_monika_gettingnude:
         m 1eublb "But I wanted to bring this up again because..."
         m 1rubsa "I was wondering if you wouldn't mind..."
         m 3ekbsa "Can I be n-{w=0.2}{nw}"
-        extend 3ekbfa "naked while you're here?"
+        extend 3ekbfa "naked while you're here?{nw}"
         $ _history_list.pop()
         menu:
             m "Can I be n-naked while you're here?{fast}"
@@ -823,7 +823,7 @@ label nsfw_monika_oralsex:
         "Yes.":
             m 1wubld "Oh...you have?"
             m 1subld "Wow."
-            m 1rublsdlb "I-I mean, please don't take it the wrong way! I wasn't surprised because I didn't think you could get a girl to do that for you!"
+            m 1rublsdlb "I-I mean, please don't take it the wrong way! I wasn't surprised because I didn't think you could get someone to do that for you!"
             m 3rublsdlb "It's just that... Ahaha..."
             m 3ekbla "Well, it's a very intimate action and I thought I could be the first one to do it for you..."
             m 3wubsd "Of course, I'm not mad at you or anything for having already done it with somebody else!"
@@ -851,7 +851,7 @@ label nsfw_monika_oralsex:
             m 1ekbstpd "Please just forget I said anything..."
             return "derandom"
 
-    if mas_safeToRefDokis(): # Maybe section for the vagina variety? Maybe.
+    if mas_safeToRefDokis() and mas_getEV("nsfw_monika_oralsex").shown_count == 0: # Maybe section for the vagina variety? Maybe.
         m 2ekbsa "So, I..."
         m 2rkbsa "I know that you didn't get the chance to get to know Sayori, Natsuki, and Yuri too much..."
         m 2ekbsa "But...umm..."
@@ -1144,7 +1144,7 @@ label nsfw_monika_sexualpast:
             m 1hkb "I'm sorry, [player]."
             m 1ektdb "Don't mind me."
 
-    return
+    return "derandom"
 
 # Thank you for the addition, Blushing!
 init 5 python:
@@ -1195,7 +1195,7 @@ label nsfw_monika_shaving:
     m 1hub "Shaved or natural..."
     m 1nub "I'll always love you!"
 
-    return "love"
+    return "derandom|love"
 
 init 5 python:
     addEvent(
