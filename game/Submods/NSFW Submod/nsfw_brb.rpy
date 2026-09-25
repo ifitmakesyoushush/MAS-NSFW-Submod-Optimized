@@ -40,7 +40,7 @@ label nsfw_monika_brb_masturbate:
             m 6ekbfa "That caught me off guard a little..."
             m 1hubla "Ehehe~"
             m 1mublb "Well, it's nice to know that's what you're up to..."
-            m 4ksbfa "Just make sure to think of your girlfriend, Monika, while you do it!"
+            m 4ksbfa "Just make sure to think of me while you do it!"
             m 2ksbfa "That'd make me really happy."
             m 3kublu "I'll be here when you're all finished up~"
     # other affection values - Don't know why you'd try this is if you have low affection
