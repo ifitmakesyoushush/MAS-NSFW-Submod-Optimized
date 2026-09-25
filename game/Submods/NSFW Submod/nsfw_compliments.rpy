@@ -429,6 +429,7 @@ label nsfw_compliment_naughty_flirting_2:
                 extend 1tkbsa " if I can give you naughty thoughts about me~"
 
         "It does need some polishing here and there, but I appreciate the effort.":
+            $ store.mas_loseAffection()
             m 1wubsd "Oh..."
             m 1wkbsc "W-well..."
             m 3rkbsc "I already spent a bunch of time studying erotica and stuff..."
@@ -436,6 +437,7 @@ label nsfw_compliment_naughty_flirting_2:
             m 3gkbsc "I'll try to work even harder, I guess..."
 
         "[naughty_bits]":
+            $ store.mas_gainAffection()
             m 1wubfd "Oh..."
             m 1hubfb "Ahaha~"
             m 1hkbfsdlb "T-that certainly caught me off-guard..."
@@ -534,7 +536,7 @@ label nsfw_compliment_moaning_2:
             m 1ekbla "But I want you to moan mine too~"
             m 1ekblb "A fair trade, don't you think?"
 
-        "You can moan abit too much sometimes...": # BLASPHEMY!
+        "You can moan a bit too much sometimes...": # BLASPHEMY!
             $ store.mas_loseAffection(2)
             m 1ekblc "Oh..."
             m 1ekbld "I'm sorry, [player]."
